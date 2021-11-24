@@ -93,14 +93,11 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 20.0),
             //ドロップする先
             DragTarget(builder: (context, candidateData, rejectedData) {
-              return DragTarget(
-                  builder: (context, candidateData, rejectedData) {
-                return Container(
-                  height: size.height * 0.2,
-                  width: size.width * 0.5,
-                  color: Colors.grey.shade300,
-                );
-              });
+              return Container(
+                height: size.height * 0.2,
+                width: size.width * 0.5,
+                color: Colors.grey.shade300,
+              );
             }),
           ],
         ),
