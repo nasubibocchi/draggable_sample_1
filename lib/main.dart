@@ -56,12 +56,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            //カウントを表示
             Text(
               _counter.toString(),
               style: const TextStyle(fontSize: 24.0),
             ),
             const SizedBox(height: 20.0),
-            //ドラッグするものと、ドラッグする先のウィジェットをここに入れる
             //ドラッグするもの
             Draggable(
               child: Container(
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             const SizedBox(height: 20.0),
-            //ドラッグする先
+            //ドロップする先
             DragTarget(builder: (context, candidateData, rejectedData) {
               return DragTarget(
                   builder: (context, candidateData, rejectedData) {
